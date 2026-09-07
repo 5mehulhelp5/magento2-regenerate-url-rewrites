@@ -117,7 +117,7 @@ class RegenerateUrlRewrites extends RegenerateUrlRewritesAbstract
      * @param  OutputInterface $output
      * @return void
      */
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         set_time_limit(0);
         $this->_input = $input;
@@ -131,7 +131,7 @@ class RegenerateUrlRewrites extends RegenerateUrlRewritesAbstract
             foreach ($this->_errors as $error) {
                 $this->_addConsoleMsg($error);
             }
-            return;
+            return \Magento\Framework\Console\Cli::RETURN_FAILURE;
         }
 
         // set area code if needed
@@ -166,6 +166,8 @@ class RegenerateUrlRewrites extends RegenerateUrlRewritesAbstract
 
         $this->_showSupportMe();
         $this->_output->writeln('Finished');
+
+        return \Magento\Framework\Console\Cli::RETURN_SUCCESS;
     }
 
     /**
