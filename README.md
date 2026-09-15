@@ -22,8 +22,7 @@ verified on **Magento 2.4.9 / PHP 8.4**.
 ## Install
 
 ```bash
-composer config repositories.regen vcs https://github.com/SISL-source/magento2-regenerate-url-rewrites
-composer require onestic/magento2-regenerate-url-rewrites:dev-main
+composer require sisl-source/magento2-regenerate-url-rewrites
 bin/magento setup:upgrade
 ```
 
