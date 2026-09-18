@@ -30,3 +30,9 @@ bin/magento setup:upgrade
 
 OSL-3.0 / AFL-3.0 (upstream). Maintained by [SISL](https://sisl.pl) — one of a set of revived,
 free, open-source Magento modules kept working on the latest releases.
+
+---
+
+### Maintained by SISL
+
+Maintained fork by **[SISL](https://sisl.pl)** — [Magento 2 development and modules](https://sisl.pl/moduly-magento). More self-hosted plugins: [SISL Marketplace](https://sisl.pl/sklep).
